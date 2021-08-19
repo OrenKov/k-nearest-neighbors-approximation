@@ -25,13 +25,17 @@ The Assignment baselines and requirements can be found and downloaded [here](htt
 
 ## Design
 * After reading about usfull tree-based data structures for the KNN algorithm, such as k-d-tree and ball-tree - I decided to go with the <strong>k-d-tree with some modifications</strong>, in fit to the constraints.
+* k-d-trees can decrease the amount of time for KNN dramatically compared to Brute-Force method, and are pretty straight-forward to study and implement. 
+* The k-d-tree version I chose to implelment is basic. There are more 'clever' ways to improve the splitting of the space into segments (which are not implemented by me), such as using CART heuristic and max-variance splits.
 * A list of given 3D points will be assigned into the tree leaves, by splitting the 3D space into distinct-parallel-to-the-axes segments, as follows:
   *  Generally speaking, divide the points of the current node by the median of `axis % points_dim`, where in each level, axis increase by 1.
   *  Stop splitting when the number of points in the node is less then K, and practically make it a leaf. Each leaf is a distinct retrievable segment.
 * <strong> Constrains: </strong>
   * Each segment contains at most K points.
-  * Each segment contains at least `K/2` points, making it 'easier' to traverse the tree and find large amount of approximated neighbors at once. <br>
+  * Each segment contains at least `K/2` points, making it 'easier' to traverse the tree and find large amount of approximated neighbors at once.
+* I chose to use the euclidian distance to measure the distance between 2 points, but others can be used as well according to the needs.
 <br>
+
 
 ## How To Use
 * Download the KNN.py file, and import it to your python working-file.
