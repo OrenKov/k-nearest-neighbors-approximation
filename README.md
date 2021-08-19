@@ -28,7 +28,7 @@ The Assignment baselines and requirements can be found and downloaded [here](htt
 * k-d-trees can decrease the amount of time for KNN dramatically compared to Brute-Force method, and are pretty straight-forward to study and implement. 
 * The k-d-tree version I chose to implelment is basic. There are more 'clever' ways to improve the splitting of the space into segments (which are not implemented by me), such as using CART heuristic and max-variance splits.
 * A list of given 3D points will be assigned into the tree leaves, by splitting the 3D space into distinct-parallel-to-the-axes segments, as follows:
-  *  Generally speaking, divide the points of the current node by the median of `axis % points_dim`, where in each level, axis increase by 1.
+  *  Generally speaking, divide the points of the current node by the median of `axis % points_dim`, where in each level, axis increased by 1.
   *  Stop splitting when the number of points in the node is less then K, and practically make it a leaf. Each leaf is a distinct retrievable segment.
 * <strong> Constrains: </strong>
   * Each segment contains at most K points.
