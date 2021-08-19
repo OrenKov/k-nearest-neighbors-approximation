@@ -31,8 +31,8 @@ The Assignment baselines and requirements can be found and downloaded [here](htt
   *  Generally speaking, divide the points of the current node by the median of `axis % points_dim`, where in each level, axis increased by 1.
   *  Stop splitting when the number of points in the node is less then K, and practically make it a leaf. Each leaf is a distinct retrievable segment.
 * <strong> Constrains: </strong>
-  * Each segment contains at most K points.
-  * Each segment contains at least `K/2` points, making it 'easier' to traverse the tree and find large amount of approximated neighbors at once.
+  * Each segment contains <strong>at most</strong> `K` points.
+  * Each segment contains <strong>at least</strong> `K/2` points, making it 'easier' to traverse the tree and find large amount of approximated neighbors at once.
 * I chose to use the euclidian distance to measure the distance between 2 points, but others can be used as well according to the needs.
 <br>
 
