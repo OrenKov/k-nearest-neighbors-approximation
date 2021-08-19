@@ -1,1 +1,1 @@
-# k-nearest-neighbors-approximation
+# KNN Approximation
