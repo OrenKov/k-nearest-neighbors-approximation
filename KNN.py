@@ -81,11 +81,7 @@ class KDTree:
 
         # Grow the trunk of the tree:
         if len(points) > self.k:
-            try:
-                sorted_points = sorted(points, key=lambda x: x[i])
-            except IndexError as e:
-                print(f"Please make sure all the points in the list are from dimension {dim} ", "\nError: ", e)
-                return
+            sorted_points = sorted(points, key=lambda x: x[i])
             i = (i + 1) % dim
             median_index = len(sorted_points) // 2
             node = Node(
