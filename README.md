@@ -19,7 +19,7 @@ There are many approches of implementing it, such as Brute-Force, Ball Tree and 
 <br>
 
 ## Requirements
-The Assignment baselines and requirements can be found and downloaded [here](https://github.com/OrenKov/k-nearest-neighbors-approximation/blob/main/KNN%20Approximation.docx).
+The assignment baselines and requirements can be found and downloaded [here](https://github.com/OrenKov/k-nearest-neighbors-approximation/blob/main/KNN%20Approximation.docx).
 <br>
 <br>
 
