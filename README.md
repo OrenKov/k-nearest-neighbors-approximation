@@ -57,7 +57,6 @@ The Assignment baselines and requirements can be found and downloaded [here](htt
 ## Performance Estimation
 ### get_z_avg method
 * I wanted to see how 'fast' the function runs correlated to the number of points in the data set and K (the number of nearest neighbors).
-* 
 * The expectation is that the running time increases logarithmically to the amount of points that were used to build the tree, because running the function is a matter of searching in the tree, and then calculating average over O(K) instances.<br>
 ![equation](https://latex.codecogs.com/gif.latex?\textbf{O(f)}&space;=&space;O(log(n)-log(K)&space;&plus;&space;O(K))&space;=&space;O(log(\frac&space;nK)&space;&plus;&space;O(K)))
 *  I ran few toy-checks (under my computer computational limitations) and found out that indeed - the time it takes to perform the function increases logarithmically to the amount of points used to build the tree (for a given K):
