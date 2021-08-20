@@ -158,10 +158,10 @@ class KDTree:
 
     def _get_axis_avg(self, p, axis):
         """
-
-        :param p:
-        :param axis:
-        :return:
+        Generalized method to find the average of an axis value in a specific point segment.
+        :param p: The point
+        :param axis: The axis to preform average on.
+        :return: The average
         """
         if axis > len(self.points[0]):
             return "Your dimension is high in the sky"
@@ -169,8 +169,8 @@ class KDTree:
 
     def _find_leaf(self, p, current_node):
         """
-
-        :return:
+        Finds the appropriate segment (leaf) of a point.
+        :return: The leaf (Node type) fit to the point.
         """
         if current_node.values:
             return current_node
